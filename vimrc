@@ -17,7 +17,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
-"set expandtab
+set expandtab
 
 set smarttab
 
@@ -86,6 +86,11 @@ set matchtime=5
 set scrolloff=3
 
 set smartindent
+
+autocmd filetype * set shiftwidth=4
+autocmd filetype * set tabstop=4
+autocmd filetype ruby,haml,erb,html,slim,yaml,scss,sass,coffee,treetop,htmldjango set shiftwidth=2
+autocmd filetype ruby,haml,erb,html,slim,yaml,scss,sass,coffee,treetop,htmldjango set tabstop=2
 
 nnoremap ; :
 inoremap jj <ESC>
