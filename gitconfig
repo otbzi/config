@@ -1,0 +1,14 @@
+[user]
+	name = otbzi
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    st = status
+	br = branch
+	co = checkout
+	df = diff
+	ci = commit
+	cl = clone
+[color]
+	diff = auto
+	status = auto
+	branch = auto
