@@ -1,0 +1,6 @@
+alias findpy="find . -name '*.py' | xargs grep --color"
+alias findh="find . -name '*.h' | xargs grep --color"
+alias findcpp="find . -name '*.cpp' | xargs grep --color"
+alias findc="find . -name '*.c' | xargs grep --color"
+alias findn="find . -name"
+alias ll="ls -l"
