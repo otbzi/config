@@ -1,5 +1,6 @@
 [user]
 	name = otbzi
+	email = ottbzi@gmail.com
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
     st = status
@@ -12,3 +13,6 @@
 	diff = auto
 	status = auto
 	branch = auto
+	ui = auto
+[core]
+	editor = /usr/bin/vim
