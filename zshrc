@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 export SVN_EDITOR="vim"
 export GOROOT="/usr/local/Cellar/go/1.1"
-export PATH=/usr/local/share/npm/bin:$PATH
+#export PATH=/usr/local/share/npm/bin:$PATH
 
 # Customize to your needs...
 alias findpy="find . -name '*.py' | xargs grep --color"
@@ -49,16 +49,16 @@ alias findc="find . -name '*.c' | xargs grep --color"
 alias findjs="find . -name '*.js' | xargs grep --color"
 alias findn="find . -name"
 
-alias b="cd ~/douban"
-alias t="cd ~/dev"
+#alias b="cd ~/douban"
+alias dev="cd ~/dev"
 
-alias sa="source ~/douban/s-env/bin/activate"
-alias da="source ~/douban/dae/venv/bin/activate"
-alias ta="source ~/dev/toe-env/bin/activate"
-alias ja="source ~/douban/jaeger/venv/bin/activate"
-alias de="deactivate"
+#alias sa="source ~/douban/s-env/bin/activate"
+#alias da="source ~/douban/dae/venv/bin/activate"
+#alias ta="source ~/dev/toe-env/bin/activate"
+#alias ja="source ~/douban/jaeger/venv/bin/activate"
+#alias de="deactivate"
 
-alias fili="ssh zengfanyu@fili"
+#alias fili="ssh zengfanyu@fili"
 alias re="lein repl"
 
 
