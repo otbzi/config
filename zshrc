@@ -59,8 +59,6 @@ alias ja="source ~/douban/jaeger/venv/bin/activate"
 alias de="deactivate"
 
 alias fili="ssh zengfanyu@fili"
-alias dev2="ssh zengfanyu@doubandev2"
-alias th="ssh zengfanyu@theoden"
 alias re="lein repl"
 
 
