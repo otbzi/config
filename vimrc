@@ -38,6 +38,14 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..jj
 
+
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+"set fileencodings=utf-8,usc-bom
+set termencoding=utf-8
+set encoding=utf-8
+
+set linebreak
+
 syntax enable
 set syntax=on
 set noeb
@@ -103,7 +111,9 @@ set wildmode=list:longest
 
 set backspace=2
 
+set wrap
 set whichwrap+=<,>,h,l
+set formatoptions+=mM
 
 set mouse=a
 set selection=exclusive
@@ -136,6 +146,17 @@ set pastetoggle=<F9>
 "inoremap ( ()<LEFT>
 "inoremap [ []<LEFT>
 "inoremap { {}<LEFT>
+
+"vmap <D-j> gj
+"vmap <D-k> gk
+"vmap <D-4> g$
+"vmap <D-6> g^
+"vmap <D-0> g^
+"nmap <D-j> gj
+"nmap <D-k> gk
+"nmap <D-4> g$
+"nmap <D-6> g^
+"nmap <D-0> g^
 
 set tags=tags;
 "set autochdir

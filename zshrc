@@ -51,6 +51,8 @@ alias findn="find . -name"
 
 #alias b="cd ~/douban"
 alias dev="cd ~/dev"
+alias vi="/usr/local/bin/vim"
+alias vim="/usr/local/bin/vim"
 
 #alias sa="source ~/douban/s-env/bin/activate"
 #alias da="source ~/douban/dae/venv/bin/activate"
