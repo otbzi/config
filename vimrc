@@ -18,7 +18,7 @@ Bundle 'https://github.com/tpope/vim-surround.git'
 Bundle 'https://github.com/kien/ctrlp.vim.git'
 Bundle 'https://github.com/sjl/gundo.vim.git'
 Bundle 'repeat.vim'
-Bundle 'https://github.com/vim-scripts/VimClojure.git'
+"Bundle 'https://github.com/vim-scripts/VimClojure.git'
 Bundle 'https://github.com/kchmck/vim-coffee-script.git'
 " only use YO for pastemode
 Bundle 'https://github.com/tpope/vim-unimpaired.git' 
