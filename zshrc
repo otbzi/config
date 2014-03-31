@@ -38,6 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 export SVN_EDITOR="vim"
 export GOROOT="/usr/local/Cellar/go/1.1"
+export LC_ALL="en_US.UTF-8"
 #export PATH=/usr/local/share/npm/bin:$PATH
 
 # Customize to your needs...
