@@ -25,6 +25,7 @@ Bundle 'https://github.com/tpope/vim-unimpaired.git'
 Bundle 'https://github.com/guns/vim-clojure-static.git'
 Bundle 'https://github.com/tpope/vim-fireplace'
 Bundle 'git://github.com/tpope/vim-classpath.git'
+Bundle 'https://github.com/guns/vim-clojure-highlight.git'
 
 filetype plugin indent on     " required!
 
