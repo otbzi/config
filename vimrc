@@ -22,10 +22,22 @@ Bundle 'repeat.vim'
 Bundle 'https://github.com/kchmck/vim-coffee-script.git'
 " only use YO for pastemode
 Bundle 'https://github.com/tpope/vim-unimpaired.git' 
-Bundle 'https://github.com/guns/vim-clojure-static.git'
+"Bundle 'https://github.com/guns/vim-clojure-static.git'
 Bundle 'https://github.com/tpope/vim-fireplace'
 Bundle 'git://github.com/tpope/vim-classpath.git'
-Bundle 'https://github.com/guns/vim-clojure-highlight.git'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'https://github.com/solarnz/thrift.vim.git'
+Bundle 'https://github.com/vim-scripts/VimClojure.git'
+Bundle 'https://github.com/kien/rainbow_parentheses.vim.git'
+Bundle 'https://github.com/jimenezrick/vimerl.git'
+Bundle 'https://github.com/fatih/vim-go.git'
+Bundle 'cespare/vim-toml'
+Bundle 'glib.vim'
+Bundle 'https://github.com/rust-lang/rust.vim'
+"Bundle 'https://github.com/Valloric/YouCompleteMe.git'
+"Bundle 'vim-scripts/paredit.vim'
+
+"Bundle 'https://github.com/guns/vim-clojure-highlight.git'
 
 filetype plugin indent on     " required!
 
@@ -136,13 +148,15 @@ set smartindent
 
 autocmd filetype * set shiftwidth=4
 autocmd filetype * set tabstop=4
-autocmd FileType ruby,haml,erb,html,slim,yaml,scss,sass,coffee,treetop,htmldjango,clojure set shiftwidth=2
-autocmd FileType ruby,haml,erb,html,slim,yaml,scss,sass,coffee,treetop,htmldjango,clojure set tabstop=2
+autocmd FileType ruby,haml,erb,html,slim,yaml,scss,sass,coffee,treetop,htmldjango,clojure,javascript,sql set shiftwidth=2
+autocmd FileType ruby,haml,erb,html,slim,yaml,scss,sass,coffee,treetop,htmldjango,clojure,javascript,sql set tabstop=2
 
 nnoremap ; :
 inoremap jj <ESC>
 "set clipboard+=unnamed
 set pastetoggle=<F9>
+set ff=unix
+
 
 "inoremap ( ()<LEFT>
 "inoremap [ []<LEFT>
@@ -170,7 +184,7 @@ if has('autocmd')
 			normal ``
 		endif
 	endfunction
-	autocmd BufWritePre *.c,*.cpp,*.h,*.py call RemoveTrailingSpace()
+	autocmd BufWritePre *.c,*.cpp,*.h,*.hpp,*.py,*.clj,*.coffee,*.js,*.erl,*.html,*.md,*.toml,*.example call RemoveTrailingSpace()
 endif
 
 " highlight space errors in C/C++ source files (Vim tip #935)
@@ -216,4 +230,7 @@ endfunction
 "let g:pymode_options = 0 " pymode will set nowrap if this == 1
 "let g:pymode_syntax = 0
 
+set syntax=glib 
+
+let g:go_fmt_command = "goimports"
 
