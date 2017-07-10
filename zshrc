@@ -61,8 +61,8 @@ alias findn="find . -name"
 
 #alias b="cd ~/douban"
 alias dev="cd ~/dev"
-alias vi="/usr/local/bin/vim"
-alias vim="/usr/local/bin/vim"
+alias vi="/usr/bin/vim"
+alias vim="/usr/bin/vim"
 
 #alias sa="source ~/douban/s-env/bin/activate"
 #alias da="source ~/douban/dae/venv/bin/activate"
@@ -98,7 +98,7 @@ removeunuseoriginbranch ()
         done
 }
 
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+#[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 git_replace () {
     old="$1" 
@@ -130,3 +130,9 @@ function stop_tuproxy {
 }
 
 alias pipd="pip --trusted-host pypi.douban.com"
+
+#export PATH=~/CRClientTools/arcanist/bin:$PATH;
+#export ARCDIR=~/CRClientTools/arcanist/bin;
+#
+#source /opt/ros/indigo/setup.sh
+
