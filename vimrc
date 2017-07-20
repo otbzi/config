@@ -4,52 +4,58 @@ set rtp+=$GOROOT/misc/vim
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-set rtp+=~/.vim/bundle/plugin/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"set rtp+=~/.vim/bundle/vundle/
+"set rtp+=~/.vim/bundle/plugin/
+"call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+"Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
-" My Bundles here:
-"Bundle 'https://github.com/klen/python-mode.git'
-Bundle 'https://github.com/tpope/vim-surround.git'
-Bundle 'https://github.com/kien/ctrlp.vim.git'
-Bundle 'https://github.com/sjl/gundo.vim.git'
-Bundle 'repeat.vim'
-"Bundle 'https://github.com/vim-scripts/VimClojure.git'
-Bundle 'https://github.com/kchmck/vim-coffee-script.git'
+
+" My Plugins here:
+"Plugin 'https://github.com/klen/python-mode.git'
+Plugin 'https://github.com/tpope/vim-surround.git'
+Plugin 'https://github.com/kien/ctrlp.vim.git'
+Plugin 'https://github.com/sjl/gundo.vim.git'
+Plugin 'repeat.vim'
+"Plugin 'https://github.com/vim-scripts/VimClojure.git'
+"Plugin 'https://github.com/kchmck/vim-coffee-script.git'
 " only use YO for pastemode
-Bundle 'https://github.com/tpope/vim-unimpaired.git' 
-"Bundle 'https://github.com/guns/vim-clojure-static.git'
-Bundle 'https://github.com/tpope/vim-fireplace'
-Bundle 'git://github.com/tpope/vim-classpath.git'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'https://github.com/solarnz/thrift.vim.git'
-Bundle 'https://github.com/vim-scripts/VimClojure.git'
-Bundle 'https://github.com/kien/rainbow_parentheses.vim.git'
-Bundle 'https://github.com/jimenezrick/vimerl.git'
-Bundle 'https://github.com/fatih/vim-go.git'
-Bundle 'cespare/vim-toml'
-Bundle 'glib.vim'
-Bundle 'https://github.com/rust-lang/rust.vim'
-"Bundle 'https://github.com/Valloric/YouCompleteMe.git'
-"Bundle 'vim-scripts/paredit.vim'
+Plugin 'https://github.com/tpope/vim-unimpaired.git' 
+"Plugin 'https://github.com/guns/vim-clojure-static.git'
+"Plugin 'https://github.com/tpope/vim-fireplace'
+"Plugin 'git://github.com/tpope/vim-classpath.git'
+Plugin 'https://github.com/solarnz/thrift.vim.git'
+"Plugin 'https://github.com/vim-scripts/VimClojure.git'
+Plugin 'https://github.com/kien/rainbow_parentheses.vim.git'
+Plugin 'https://github.com/jimenezrick/vimerl.git'
+Plugin 'https://github.com/fatih/vim-go.git'
+Plugin 'cespare/vim-toml'
+Plugin 'glib.vim'
+"Plugin 'https://github.com/rust-lang/rust.vim'
+"Plugin 'https://github.com/Valloric/YouCompleteMe.git'
+"Plugin 'vim-scripts/paredit.vim'
 
-"Bundle 'https://github.com/guns/vim-clojure-highlight.git'
+"Plugin 'https://github.com/guns/vim-clojure-highlight.git'
 
-filetype plugin indent on     " required!
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 "
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured bundles
+" :PluginInstall(!)    - install(update) bundles
+" :PluginSearch(!) foo - search(or refresh cache first) for foo
+" :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..jj
+" NOTE: comments after Plugin command are not allowed..jj
 
 
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
@@ -233,4 +239,6 @@ endfunction
 set syntax=glib 
 
 let g:go_fmt_command = "goimports"
+
+"set equalprg=astyle\ --style=google
 
