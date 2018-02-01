@@ -116,19 +116,6 @@ git_replace () {
     done
 }
 
-#
-# tuxingsun.net
-#
-function start_tuproxy {
-    export HTTP_PROXY='gnu.3.14159.in:13467'
-    export HTTPS_PROXY='gnu.3.14159.in:13467'
-}
-
-function stop_tuproxy {
-    export HTTP_PROXY=
-    export HTTPS_PROXY=
-}
-
 alias pipd="pip --trusted-host pypi.douban.com"
 
 #export PATH=~/CRClientTools/arcanist/bin:$PATH;
